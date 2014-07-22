@@ -38,7 +38,7 @@ var people = [
 var oldestAge = function( people ) {
 	var oldestPerson = _.max(people, 'age');
 
-	return oldestPerson['age'];
+	return oldestPerson.age;
 };
 
 // Return the names of people that are alive in a collection of people
@@ -50,7 +50,7 @@ var living = function( people ) {
  var oldestLivingPerson = function( people ) {
 	var oldestLivingPerson = _.max( _.filter(people, 'age'), 'age');
 
-	return oldestLivingPerson['name'];
+	return oldestLivingPerson.name;
 };
 
 console.log( 'Age of oldest person: ' + oldestAge(people));
